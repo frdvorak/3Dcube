@@ -270,27 +270,14 @@ input[type=color]:active {
 	font-weight: 900;
 }
 
-@media screen and (max-height: 600px) {
-	body {
-		overflow-y: visible;
-	}
-	  #controls {
-		top:-17%;
-		transform: scale(.7);
-	}
-	.comment {
-		bottom: 0;
-		border-left: 0px;
-		width: 50%;
-	}
-}
+
 // MOBILE STYLES ////////////////////////////////////////////////////
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 0px) {
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 
 	.container {
-		top: 10%;
+		top: 20%;
 		left: 35%;
 		//overflow: visible;
 		transform: scale(.8);
@@ -299,16 +286,12 @@ input[type=color]:active {
 		margin: 0;
 		text-align: left;
 	}
-	.comment {
-		bottom: 0;
-		border-left: 0px;
-		width: 50%;
-	}
   	#controls {
-		top:2%;
+		top:-1%;
+		left: 1%;
 		height: 100%;
-		border-right: 0px;
-		transform: scale(.8);
+		border-right: 0px solid black;
+		//transform: scale(.8);
 	}
 	h1 {
 		left: 60%;
@@ -316,12 +299,47 @@ input[type=color]:active {
 	}
 	.comment {
 		left: 115px;
-		right: auto;
+		top: auto;
+		right: 0;
+		bottom: 0;
 		font-size: 12px;
 		border-left: 0px solid black;
-		width: 50px%;
+		width: 60%;
 	}
   
+}
+@media screen and (max-height: 400px) {
+	body {
+		overflow-y: visible;
+	}
+	.container {
+		top: 10%;
+	}
+	.comment {
+		top:0;
+		bottom: auto;
+		right: 0;
+		left: auto;
+		border-left: 0px;
+		width: 19%;
+
+	}
+	.button{
+		height: 10px;
+		line-height: 10px;
+	}
+	input {
+		height: 20px;
+	}
+	.heading {
+		font-size: 20vh;
+		top: 1%;
+		left: 150px;
+	}
+	.heading span{
+		line-height: 20vh;
+		left: 0;
+	}
 }
 </style> 
 </head>
