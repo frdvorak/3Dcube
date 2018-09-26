@@ -1,6 +1,6 @@
 # 3Dcube
 
-Simple 3D cube with nice button effects. You can change colour of the cube and it's spin.
+Simple 3D cube with some button effects and animated background. You can change colour of the cube and it's spin.
 
 Screenshot:
 
